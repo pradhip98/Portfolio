@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  font-family: 'Quantico', sans-serif;
+  line-height: 40px;
+}
+body{
+    background: linear-gradient(90deg,gray,rgb(179, 179, 179));
+
+}
+.grid-container .item1 h3,.item3 h3{
+    text-align: center;
+    color:#fff;
+    margin:5px 0;
+    border-radius:10px;
+    box-shadow:5px 5
+    px 3px rgb(97, 97, 247);
+    background: linear-gradient(90deg,gray,rgb(179, 179, 179));
+}
+.profile {
+  background: linear-gradient(90deg, blue, 30%, rgb(55, 55, 249));
+  grid-area: profile;
+  width: 250px;
+  color: #fff;
+}
+.profile img{
+  border-radius:100%;
+}
+.profile div:nth-child(1) {
+  text-align: center;
+}
+.profile div:nth-child(2) h3{
+  margin-left: 22px;
+}
+.grid-container {
+  margin: 20px;
+  display: grid;
+  grid-template-areas: "profile item1 item3";
+  box-shadow: 0 0 5px black;
+  gap:10px;
+}
+.item1 {
+  grid-area: item1;
+  padding: 20px;
+  background-color: #fff;
+}
+.item3 {
+  padding: 20px;
+  background-color: #fff;
+}
+.item3 table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 15px;
+}
+.item3 th,
+td {
+  border-right: 1px solid grey;
+}
+.item3 tr {
+  border-bottom: 1px solid grey;
+}
+.grid-container ul  li{
+  list-style-type: none;
+}
+.grid-container ul  li::before {
+  content: "•";
+  color:grey;
+    display: inline-block;
+     width: 1em;
+    margin-left: -1em;
+}
+.grid-container .address svg,.grid-container .phone svg{
+  fill:#fff;width:1.5em;margin-bottom:-2px;
+}
+.grid-container .email svg{
+  fill:#fff;width:1.5em;margin-bottom:-4px;
+}
+.grid-container ol li{
+  list-style-type: none;
+  margin-left: -1rem;
+}
+.exp li p{
+display: flex;
+justify-content: space-between;
+}
+
+
